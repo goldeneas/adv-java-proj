@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 public class NumericQuestionAttempt {
     private NumericQuestion question;
     private int givenAnswer;
