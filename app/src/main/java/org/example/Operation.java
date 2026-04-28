@@ -1,4 +1,4 @@
-package main.java.org.example;
+package org.example;
 
 public enum Operation {
     ADD('+'),
@@ -10,7 +10,7 @@ public enum Operation {
         this.operation = operation;
     }
 
-    public char toChar(){
+    public char toChar() {
         return this.operation;
     }
 }

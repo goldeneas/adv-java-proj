@@ -1,4 +1,4 @@
-package main.java.org.example;
+package org.example;
 
 import java.util.Random;
 
@@ -25,7 +25,7 @@ public class NumericQuestion {
         return this.operator;
     }
 
-    public static NumericQuestion randomInit(){
+    public static NumericQuestion randomInit() {
         Random rand = new Random();
 
         int n1 = rand.nextInt(51);
@@ -37,10 +37,10 @@ public class NumericQuestion {
         return new NumericQuestion(n1, n2, op);
     }
 
-    public int getResult() throws ArithmeticException{
-        if(this.operator == '+'){
+    public int getResult() throws ArithmeticException {
+        if (this.operator == '+') {
             return this.num1 + this.num2;
-        }else if(this.operator == '-'){
+        } else if (this.operator == '-') {
             return this.num1 - this.num2;
         }
 

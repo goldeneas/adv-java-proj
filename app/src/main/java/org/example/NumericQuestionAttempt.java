@@ -1,4 +1,5 @@
-package main.java.org.example;
+package org.example;
+
 public class NumericQuestionAttempt {
     private NumericQuestion question;
     private int givenAnswer;
@@ -7,7 +8,8 @@ public class NumericQuestionAttempt {
         this.question = question;
         this.givenAnswer = givenAnswer;
     }
-     public NumericQuestion getQuestion() {
+
+    public NumericQuestion getQuestion() {
         return question;
     }
 
@@ -23,5 +25,4 @@ public class NumericQuestionAttempt {
         return isCorrect() ? "Correct" : "Wrong";
     }
 
-   
 }
