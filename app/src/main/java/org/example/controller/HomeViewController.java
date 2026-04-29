@@ -60,4 +60,8 @@ public class HomeViewController {
         String username = this.surnameField.getText();
         return String.format("%s %s", name, username);
     }
+
+    public int getQuestionsLen() {
+        return Integer.parseInt(this.questionLenField.getText());
+    }
 }
