@@ -54,4 +54,10 @@ public class HomeViewController {
         stage.setScene(new Scene(root));
         stage.show();
     }
+
+    public String getUsername() {
+        String name = this.nameField.getText();
+        String username = this.surnameField.getText();
+        return String.format("%s %s", name, username);
+    }
 }
