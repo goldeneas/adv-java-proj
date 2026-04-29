@@ -49,6 +49,6 @@ public class NumericQuestion {
 
     @Override
     public String toString() {
-        return this.num1 + "" + this.operator + " " + this.num2 + " = " + this.getResult() + "\n";
+        return this.num1 + "" + this.operator + " " + this.num2 + " = ";
     }
 }
