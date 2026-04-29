@@ -44,10 +44,10 @@ public class HomeViewController {
         String questionsLenStr = this.questionLenField.textProperty().get();
         int questionsLen = Integer.parseInt(questionsLenStr);
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("questions.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("QuizView.fxml"));
         Parent root = (Parent) loader.load();
 
-        QuestionsViewController controller = loader.getController();
+        QuizViewController controller = loader.getController();
         controller.setQuestionsLen(questionsLen);
 
         Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
