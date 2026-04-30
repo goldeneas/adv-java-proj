@@ -1,9 +1,9 @@
 package org.example.controller;
 
+import org.example.NumericQuestionAttempt;
 import javafx.collections.FXCollections;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.FileChooser;
-import org.example.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -37,11 +37,11 @@ public class ResultsViewController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         this.attemptColumn.setCellValueFactory(new PropertyValueFactory<>("attempt"));
         this.outcomeColumn.setCellValueFactory(new PropertyValueFactory<>("result"));
+    }
 
-        List<NumericQuestionAttempt> attempts = ;
+    public void setQuizData(List<NumericQuestionAttempt> attempts, String username){
         this.resultsTable.setItems(FXCollections.observableArrayList(attempts));
-
-        this.messageLabel.setText("Gentile " + /* getUserName() */ + ", grazie per aver completato il quiz. " + "Esporta i tuoi risultati su file.");
+        this.messageLabel.setText("Gentile " + username + ", grazie per aver completato il quiz. " + "Esporta i tuoi risultati su file.");
     }
 
     @FXML
