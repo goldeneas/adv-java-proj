@@ -58,7 +58,7 @@ public class ResultsViewController implements Initializable {
                 pw.println("TENTATIVO; RISULTATO CORRETTO; ESITO");
 
                 for (NumericQuestionAttempt attempt : resultsTable.getItems()) {
-                    String line = String.format("%s=%d; %d; %s",
+                    String line = String.format("%s%d; %d; %s",
                             attempt.getQuestion(),
                             attempt.getGivenAnswer(),
                             attempt.getQuestion().getResult(),
